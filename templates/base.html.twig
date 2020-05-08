@@ -2,21 +2,27 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>{% block title %}{% endblock %}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/png" href="{{ asset('build/images/favicon.png') }}" />
         <meta name="robots" content="noindex">
-        <!-- Hotjar Tracking Code for http://dev.acappelaere.com/ -->
-        <script>
-            (function(h,o,t,j,a,r){
-                h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-                h._hjSettings={hjid:1803140,hjsv:6};
-                a=o.getElementsByTagName('head')[0];
-                r=o.createElement('script');r.async=1;
-                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-                a.appendChild(r);
-            })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-        </script>
+        <meta name="description" content="{% block metadescription %}{% endblock %}" />
+        <meta name="title" content="{% block metatitle %}{% endblock %}">
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="{{ app.request.uri }}">
+        <meta property="og:title" content="Adrien Cappelaere - Stratégiste digital">
+        <meta property="og:description" content="Laissez-vous guider pour accroître votre présence digitale ! Professionnel du web, je développe des sites optimisés pour atteindre vos objectifs et utilisateurs.">
+        <meta property="og:image" content="{{ asset('build/images/opengraph.jpg') }}">
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="{{ app.request.uri }}">
+        <meta property="twitter:title" content="Adrien Cappelaere - Stratégiste digital">
+        <meta property="twitter:description" content="Laissez-vous guider pour accroître votre présence digitale ! Professionnel du web, je développe des sites optimisés pour atteindre vos objectifs et utilisateurs.">
+        <meta property="twitter:image" content="{{ asset('build/images/opengraph.jpg') }}">
+
         {% block stylesheets %}
             {# 'app' must match the first argument to addEntry() in webpack.config.js #}
             {{ encore_entry_link_tags('app') }}
@@ -83,7 +89,17 @@
 
     {% block javascripts %}
         {{ encore_entry_script_tags('app') }}
-
+        <!-- Hotjar Tracking Code for http://dev.acappelaere.com/ -->
+        <script>
+            (function(h,o,t,j,a,r){
+                h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+                h._hjSettings={hjid:1803140,hjsv:6};
+                a=o.getElementsByTagName('head')[0];
+                r=o.createElement('script');r.async=1;
+                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                a.appendChild(r);
+            })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+        </script>
         <!-- Renders app.js & a webpack runtime.js file
             <script src="/build/runtime.js"></script>
             <script src="/build/app.js"></script> -->
