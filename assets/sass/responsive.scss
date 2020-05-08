@@ -1,0 +1,341 @@
+@media screen and (max-width: 768px) {
+  .a-hero {
+    .title {
+      line-height: 48px;
+    }
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 650px) and (max-width: 1023px) {
+.a-competence {
+  display:flex;
+  padding-top: 24px;
+  .a-competence-main-img {
+    margin-top: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .a-competence-main-img-right {
+    order: 2;
+  }
+  .a-competence-txt {
+    max-width: 350px;
+  }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .navbar {
+    background: none;
+    max-width: 1120px;
+    margin-left: auto;
+    justify-content: space-between;
+    .navbar-menu {
+      padding-right: 1.5rem;
+    }
+    .navbar-brand {
+      padding-top: 0.5rem;
+    }
+    .navbar-end{
+      margin-right: 5rem;
+    }
+  }
+  .a-hero {
+    justify-content: space-between;
+    margin-top:192px;
+    .title {
+      font-size: 4.5rem !important;
+      line-height: 5rem;
+    }
+    .button-hero {
+      margin-bottom: 368px;
+      margin-left: -25px;
+    }
+  }
+  .scroller {
+    top: 168px;
+    left: -40px;
+  }
+  .a-competence-section {
+    background-color: $blue;
+    flex-direction: row;
+    margin-left:-1rem;
+    border-radius: 0 40px 40px 0;
+    .a-competence {
+      margin-bottom:0;
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: 24px;
+      margin-right: 8px;
+    }
+    .a-competence-right {
+      margin-right: 8px;
+    }
+    .a-competence-first {
+      margin-left:24px;
+    }
+    .a-competence-last {
+      margin-right: 0;
+    }
+  }
+
+  .a-project-bloc {
+    display:flex;
+    .a-project-bloc-txt {
+      width: 500px;
+    }
+  }
+
+  .footer .section {
+    display: flex;
+    .a-footer-txt{
+      max-width: 730px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .navbar {
+    background: none;
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    .navbar-menu {
+      padding-right: 1.5rem;
+    }
+    .navbar-brand {
+      padding-top: 0.5rem;
+    }
+  }
+  .a-hero {
+    justify-content: space-between;
+    margin-top:192px;
+    .title {
+      font-size: 4.5rem !important;
+      line-height: 5rem;
+    }
+    .button-hero {
+      margin-bottom: 368px;
+      margin-left: -25px;
+    }
+  }
+  .scroller {
+    top: 168px;
+    left: -40px;
+  }
+  .a-competence-section {
+    background-color: $blue;
+    flex-direction: row;
+    margin-left:calc(-1*(50vw - 560px));
+    margin-right:-64px;
+    border-radius: 0 40px 40px 0;
+    .a-competence {
+      width: 352px;
+      margin-bottom:0;
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: 24px;
+      margin-right: 8px;
+    }
+    .a-competence-right {
+      margin-right: 8px;
+    }
+    .a-competence-first {
+      margin-left:calc((50vw - 560px));
+    }
+    .a-competence-last {
+      margin-right: 0;
+    }
+  }
+
+  .a-project-bloc {
+    display:flex;
+    .a-project-bloc-txt {
+      width: 500px;
+    }
+  }
+
+  .footer .section {
+    display: flex;
+    .a-footer-txt{
+      max-width: 730px;
+    }
+  }
+}
+
+// A PROPOS
+@media screen and (max-width: 767px) {
+  .a-valeur {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .a-valeur-img {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .a-valeur{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .a-valeur-droite {
+
+  }
+  .a-valeur-gauche {
+    order: -1;
+  }
+  .a-valeur-txt {
+    max-width: 672px ;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .a-contact-txt {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .a-formulaire {
+    max-width: 495px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .a-hero-contact {
+    flex-direction: column;
+
+    .title {
+      font-size: 3rem !important;
+      line-height: 3.5rem;
+    }
+
+    .a-form-title {
+      color: $blue;
+      line-height: 3.5rem;
+    }
+
+    button {
+      color: white;
+      background-color: $blue;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1120px) {
+  .a-hero-contact {
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+    justify-content: space-between;
+    margin-top:192px;
+    button {
+      color: $blue;
+      background-color: white;
+    }
+    .a-formulaire {
+      padding-right: 24px;
+    }
+    .title {
+      font-size: 4.5rem !important;
+      line-height: 5rem;
+    }
+    .button-hero {
+      margin-bottom: 368px;
+      margin-left: -25px;
+    }
+  }
+  .a-hero-propos {
+    padding-top: 196px;
+  }
+  .a-navbar-top-about {
+    background-color: transparent;
+  }
+  .a-hero-who-txt {
+    max-width: 672px;
+  }
+  .a-who {
+    justify-content: space-between;
+  }
+  .a-formulaire {
+    max-width: calc(464px) ;
+    background-color: $blue;
+    margin-right: 0;
+    padding-left: 56px;
+    padding-top: 28px;
+    padding-bottom:56px;
+    border-radius: 40px 0 0 40px;
+    .label, .checkbox {
+      color: $white;
+    }
+    .a-formulaire-margin {
+      margin-right: 24px;
+    }
+    .a-form-title {
+      color: $blue-3;
+    }
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .a-hero-contact {
+    padding-right: 0 !important;
+    justify-content: space-between;
+    margin-top:192px;
+    button {
+      color: $blue;
+      background-color: white;
+    }
+    .title {
+      font-size: 4.5rem !important;
+      line-height: 5rem;
+    }
+    .button-hero {
+      margin-bottom: 368px;
+      margin-left: -25px;
+    }
+  }
+  .a-hero-propos {
+    padding-top: 196px;
+  }
+  .a-navbar-top-about {
+    background-color: transparent;
+  }
+  .a-hero-who-txt {
+    max-width: 672px;
+  }
+  .a-who {
+    justify-content: space-between;
+  }
+  .a-formulaire {
+    max-width: calc(464px + (50vw - 560px) + 56px) ;
+    background-color: $blue;
+    margin-right: calc(-1*(50vw - 560px));
+    padding-left: 56px;
+    padding-top: 28px;
+    padding-bottom:56px;
+    border-radius: 40px 0 0 40px;
+    .label, .checkbox {
+      color: $white;
+    }
+    .a-formulaire-margin {
+      margin-right:calc((50vw - 560px));
+    }
+    .a-form-title {
+      color: $blue-3;
+    }
+  }
+}

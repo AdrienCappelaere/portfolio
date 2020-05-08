@@ -1,0 +1,190 @@
+@import "~bulma/sass/utilities/initial-variables";
+@import "~bulma/sass/utilities/functions";
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap');
+
+$blue : hsl(203,100%,25%);
+$blue-11: rgba(0,60,98,1);
+$blue-9: rgba(0,109,178,1);
+$blue-8: rgba(0,138,225,1);
+$blue-7: rgba(18,164,255,1);
+$blue-6: rgba(65,182,255,1);
+$blue-5: rgba(113,200,255,1);
+$blue-4: rgba(160,218,255,1);
+$blue-3: rgba(208,237,255,1);
+$primary : $blue;
+$footer-background-color : $blue;
+$family-sans-serif : "Open Sans", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$family-secondary: "Poppins", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+
+@import "~bulma/bulma";
+@import "~bulma-spacing/bulma-spacing";
+@import "a-variables";
+
+.section {
+  padding-bottom: 144px;
+  padding-top: 0;
+  outline: none;
+  max-width: 1120px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.button {
+  border-radius: 0.5rem;
+  border:none;
+}
+
+.btn-secondary {
+  background-color: $blue-3;
+  color: $blue
+}
+
+.navbar-item img {
+  max-height: 64px;
+}
+.title {
+  font-family: $family-secondary;
+  font-weight: bold;
+}
+
+.navbar-desktop {
+  box-shadow: 0px 0px 15px rgba(179, 179, 179, 0.1);
+  border-radius: 99999px;
+  padding: 0 50px;
+  margin-top: 1rem;
+  flex-grow:0;
+  align-items: center;
+  background: $white;
+}
+
+.navbar-item {
+  line-height: 1rem;
+  padding:0.5rem 1.5rem;
+}
+
+.navbar-bottom {
+  justify-content: center;
+}
+
+.a-hero {
+  margin-top: 44px;
+  .title {
+    line-height: 56px;
+    margin:0;
+  }
+}
+
+@keyframes home {
+  0% {transform: translateY(-48px);}
+  100%  {transform: translateY(240px);}
+}
+
+.scroller {
+  position:relative;
+  width: 1px;
+  background: $blue-4;
+  height: 240px;
+  overflow: hidden;
+  &::before {
+    content: '';
+    position: absolute;
+    height: 48px;
+    background: $blue;
+    width: 1px;
+    animation-name: home;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+}
+
+.a-competence {
+  background: $blue;
+  margin-bottom: 11rem;
+  padding-left: 24px;
+  padding-right: 8px;
+  .a-competence-main-img {
+    display:flex;
+    margin-top:-6rem;
+    justify-content: center;
+    padding:0 1rem;
+    outline: none;
+  }
+
+}
+ .a-img-center {
+   justify-content: center;
+   align-items: center;
+ }
+
+.tags {
+  .tag {
+    border-radius: 0.5rem;
+    padding:4px 6px;
+  }
+}
+
+.a-competence-right {
+  margin-right: -1.5rem;
+  border-radius: 40px 0 0 40px;
+}
+
+.a-competence-left {
+  margin-left: -1.5rem;
+  border-radius: 0 40px 40px 0;
+}
+
+.a-competence-last {
+  margin-bottom: 0;
+}
+
+.a-competence-section {
+  flex-direction: column
+}
+
+// PAGE A PROPOS
+
+.a-hero-propos {
+  background-color: $blue;
+  margin-top:0 !important;
+  padding-top: 24px;
+}
+
+.scroller-about {
+  background: $blue-11;
+  &::before{
+    background: $white;
+  }
+}
+
+.a-hero-about {
+  background-color: $blue;
+}
+
+.a-navbar-top-about {
+  background-color: $blue;
+}
+
+.a-contact-txt {
+  max-width: 495px;
+}
+
+.a-hero-contact {
+  margin-top: 44px;
+  .title {
+    line-height: 56px;
+    margin:0;
+  }
+}
+
+
+.a-contact-img {
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+@import "responsive";

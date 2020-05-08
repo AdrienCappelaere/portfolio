@@ -1,0 +1,123 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Adrien Cappelaere - Stratégiste digital{% endblock %}
+
+{% block body %}
+
+    <!-- HERO -->
+    <div class="a-hero-about">
+        <section class="section a-hero a-hero-propos has-padding-bottom-0 is-flex">
+            <div>
+                <h1 class="title is-size-2-mobile is-size-1-tablet has-text-white">Je suis Adrien Cappelaere.</h1>
+                <h2 class="title is-size-2-mobile is-size-1-tablet a-text-blue-3 has-margin-bottom-62">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  laoreet ornare.</h2>
+                <div class="is-flex">
+                    <div class="scroller scroller-about has-margin-right-24">
+                    </div>
+                    <a href="#about" class="button is-white has-text-primary has-text-weight-bold scroll button-hero">
+                        <span>En savoir plus</span>
+                        <span class="icon">
+                <i class="gg-arrow-down-o"></i>
+            </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about" class="section is-flex has-padding-top-24 a-who">
+            <div class="is-hidden-touch has-margin-32">
+                <img src="{{ asset('build/images/about.png') }}" alt="Illustration de la page A propos d'Adrien Cappelaere">
+            </div>
+            <div class="a-hero-who-txt">
+                <h1 class="title is-size-2-mobile is-size-1-tablet has-text-primary has-margin-top-56">Adrien, c’est qui ?</h1>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus id imperdiet cursus arcu. Laoreet orci, elementum augue viverra felis. Suspendisse egestas vehicula mauris vivamus imperdiet proin neque, suspendisse leo.</p>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus id imperdiet cursus arcu. Laoreet orci, elementum augue viverra felis. Suspendisse egestas vehicula mauris vivamus imperdiet proin neque, suspendisse leo.</p>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus id imperdiet cursus arcu. Laoreet orci, elementum augue viverra felis. Suspendisse egestas vehicula mauris vivamus imperdiet proin neque, suspendisse leo.</p>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus id imperdiet cursus arcu. Laoreet orci, elementum augue viverra felis. Suspendisse egestas vehicula mauris vivamus imperdiet proin neque, suspendisse leo.</p>
+            </div>
+    </section>
+
+    <!-- VALEURS -->
+    <section class="section has-padding-top-24">
+        <h1 class="title is-size-2-mobile is-size-1-tablet has-text-primary">Mes valeurs</h1>
+        <div class="a-valeur content">
+            <div class="a-valeur-txt">
+                <p class="title is-size-1 a-text-blue-8 has-margin-bottom-16">01.</p>
+                <h3 class="subtitle is-size-4 has-text-weight-bold has-text-primary">Garder le cap sur le business</h3>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus id imperdiet cursus arcu. Laoreet orci, elementum augue viverra felis. Suspendisse egestas vehicula mauris vivamus imperdiet proin neque, suspendisse leo.</p>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus id imperdiet cursus arcu. Laoreet orci, elementum augue viverra felis. Suspendisse egestas vehicula mauris vivamus imperdiet proin neque, suspendisse leo.</p>
+            </div>
+            <div class="has-margin-16 a-valeur-img">
+                <img src="{{ asset('build/images/valeur-business.png') }}" alt="Illustration de la valeur Garder le cap sur le business">
+            </div>
+        </div>
+        <div class="a-valeur a-valeur-droite content">
+            <div class="a-valeur-txt">
+                <p class="title is-size-1 a-text-blue-8 has-margin-bottom-16">02.</p>
+                <h3 class="subtitle is-size-4 has-text-weight-bold has-text-primary">L'UX est la clé du succès</h3>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus id imperdiet cursus arcu. Laoreet orci, elementum augue viverra felis. Suspendisse egestas vehicula mauris vivamus imperdiet proin neque, suspendisse leo.</p>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus id imperdiet cursus arcu. Laoreet orci, elementum augue viverra felis. Suspendisse egestas vehicula mauris vivamus imperdiet proin neque, suspendisse leo.</p>
+            </div>
+            <div class="a-valeur-gauche has-margin-16 a-valeur-img">
+                <img src="{{ asset('build/images/valeur-ux.png') }}" alt="Illustration de la valeur L'UX est la clé du succès">
+            </div>
+        </div>
+        <div class="a-valeur content">
+            <div class="a-valeur-txt">
+                <p class="title is-size-1 a-text-blue-8 has-margin-bottom-16">03.</p>
+                <h3 class="subtitle is-size-4 has-text-weight-bold has-text-primary">Une relation saine et pérenne</h3>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus id imperdiet cursus arcu. Laoreet orci, elementum augue viverra felis. Suspendisse egestas vehicula mauris vivamus imperdiet proin neque, suspendisse leo.</p>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus id imperdiet cursus arcu. Laoreet orci, elementum augue viverra felis. Suspendisse egestas vehicula mauris vivamus imperdiet proin neque, suspendisse leo.</p>
+            </div>
+            <div class="has-margin-16 a-valeur-img">
+                <img src="{{ asset('build/images/valeur-client.png') }}" alt="Illustration de la valeur Une relation saine et pérenne">
+            </div>
+        </div>
+        <div class="a-valeur a-valeur-droite content">
+            <div class="a-valeur-txt">
+                <p class="title is-size-1 a-text-blue-8 has-margin-bottom-16">04.</p>
+                <h3 class="subtitle is-size-4 has-text-weight-bold has-text-primary">Faire parler les chiffres</h3>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus id imperdiet cursus arcu. Laoreet orci, elementum augue viverra felis. Suspendisse egestas vehicula mauris vivamus imperdiet proin neque, suspendisse leo.</p>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus id imperdiet cursus arcu. Laoreet orci, elementum augue viverra felis. Suspendisse egestas vehicula mauris vivamus imperdiet proin neque, suspendisse leo.</p>
+            </div>
+            <div class="a-valeur-gauche has-margin-16 a-valeur-img">
+                <img src="{{ asset('build/images/valeur-chiffre.png') }}" alt="Illustration de la valeur Faire parler les chiffres">
+            </div>
+        </div>
+        <div class="a-valeur content">
+            <div class="a-valeur-txt">
+                <p class="title is-size-1 a-text-blue-8 has-margin-bottom-16">05.</p>
+                <h3 class="subtitle is-size-4 has-text-weight-bold has-text-primary">Se former en permanence</h3>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus id imperdiet cursus arcu. Laoreet orci, elementum augue viverra felis. Suspendisse egestas vehicula mauris vivamus imperdiet proin neque, suspendisse leo.</p>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus id imperdiet cursus arcu. Laoreet orci, elementum augue viverra felis. Suspendisse egestas vehicula mauris vivamus imperdiet proin neque, suspendisse leo.</p>
+            </div>
+            <div class="has-margin-16 a-valeur-img">
+                <img src="{{ asset('build/images/valeur-apprendre.png') }}" alt="Illustration de la valeur Se former en permanence">
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- CONTACT -->
+    <footer class="footer">
+        <div class="section">
+            <div class="a-footer-txt">
+                <h2 class="title is-size-3-mobile is-size-1-tablet is-marginless has-text-white">Me contacter</h2>
+                <p class="title is-size-3-mobile is-size-1-tablet a-text-blue-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus nunc aliquet enim laoreet ornare. </p>
+                <a href="{{ path('contact') }}" class="button is-white has-text-primary has-text-weight-bold">
+                    <span>Me contacter</span>
+                    <span class="icon">
+                <i class="gg-arrow-right-o"></i>
+            </span>
+                </a>
+            </div>
+            <div class="is-hidden-mobile is-flex a-contact-img">
+                <img src="{{ asset('build/images/contact.png') }}" alt="Illustration du bloc de contact">
+            </div>
+        </div>
+
+    </footer>
+{% endblock %}

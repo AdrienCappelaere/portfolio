@@ -1,0 +1,59 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+    <!-- HERO -->
+    <section class="section a-hero-contact has-padding-bottom-0 is-flex">
+        <div class="a-contact-txt">
+            <h1 class="title is-size-2-mobile is-size-1-tablet has-text-primary has-margin-bottom-56">Me contacter</h1>
+            <p class="content">Contactez moi pour échanger sur votre projet digital à l’aide du formulaire de contact ci-contre. Je vous réponds sous 48 heures ouvrées.</p>
+            <p class="content">N’hésitez pas à détailler les informations dans votre message, cela me permettra d’avoir un contexte plus complet avant notre premier échange.</p>
+            <div class="is-hidden-mobile is-flex is-centered a-contact-img">
+                <img src="{{ asset('build/images/contact.png') }}" alt="Illustration du bloc de contact">
+            </div>
+        </div>
+        <div class="a-formulaire">
+            <div class="a-formulaire-margin">
+            <h3 class="content has-text-weight-bold is-size-1 a-form-title">Formulaire de contact</h3>
+            <div class="field">
+                <label class="label">Nom</label>
+                <input class="input is-rounded" type="text" placeholder="Rounded input">
+            </div>
+            <div class="field">
+                <label class="label">Email</label>
+                <input class="input is-rounded" type="text" placeholder="Rounded input">
+            </div>
+            <div class="field">
+                <label class="label">Message</label>
+                <div class="control">
+                    <textarea class="textarea is-rounded" placeholder="Textarea"></textarea>
+                </div>
+            </div>
+            <div class="field">
+                <div class="control">
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        J’accepte que les informations entrées dans le formulaire de contact soit utilisées pour me répondre.*
+                    </label>
+                </div>
+            </div>
+            <div class="field">
+                <div class="control">
+                    <button class="button has-text-weight-bold">
+                        <span>Envoyer ma demande</span>
+                        <span class="icon">
+                            <i class="gg-arrow-right-o"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORM -->
+    <section class="section">
+
+    </section>
+{% endblock %}

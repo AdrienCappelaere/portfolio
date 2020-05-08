@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="{{ asset('build/images/favicon.png') }}" />
+        {% block stylesheets %}
+            {# 'app' must match the first argument to addEntry() in webpack.config.js #}
+            {{ encore_entry_link_tags('app') }}
+
+            <!-- Renders a link tag (if your module requires any CSS)
+                 <link rel="stylesheet" href="/build/app.css"> -->
+        {% endblock %}
+    </head>
+    <body>
+    <nav class="navbar is-fixed-top-desktop" role="navigation" aria-label="main navigation">
+        {% if (app.request.get('_route') == 'about') %}
+            <div class="navbar-brand a-navbar-top-about">
+        {% else %}
+            <div class="navbar-brand">
+        {% endif %}
+            <a class="navbar-item" href=" {{ path('home') }} ">
+                <figure id="image is-64x64">
+                    {% if (app.request.get('_route') == 'about') %}
+                    <img src="{{ asset('build/images/logo-white.png') }}" alt="Illustration d'accueil">
+                    {% else %}
+                    <img src="{{ asset('build/images/logo.png') }}" alt="Illustration d'accueil">
+                    {% endif %}
+                </figure>
+            </a>
+        </div>
+        <div id="" class="navbar-menu is-hidden-mobile ">
+            <div class="navbar-end navbar-desktop">
+                <a href="{{ path('home') }}" class="navbar-item has-text-primary is-size-7" style="flex-direction: column">
+                    <span class="icon"><i class="gg-home"></i></span>
+                    <span>Accueil</span>
+                </a>
+                <p style="align-self:center;">|</p>
+                <a href="{{ path('about') }}" class="navbar-item is-size-7	" style="flex-direction: column">
+                    <span class="icon"><i class="gg-profile"></i></span>
+                    <span>À propos</span>
+                </a>
+                <p style="align-self:center;">|</p>
+                <a href="{{ path('contact') }}" class="navbar-item is-size-7	" style="flex-direction: column">
+                    <span class="icon"><i class="gg-mail"></i></span>
+                    <span>Contact</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar is-fixed-bottom is-hidden-desktop is-centered " role="navigation" aria-label="main navigation">
+        <div class="navbar-brand is-flex navbar-bottom ">
+            <a href="{{ path('home') }}" class="navbar-item has-text-primary is-size-7" style="flex-direction: column">
+                <span class="icon"><i class="gg-home"></i></span>
+                <span>Accueil</span>
+            </a>
+            <p style="align-self:center;">|</p>
+            <a href="{{ path('about') }}" class="navbar-item is-size-7	" style="flex-direction: column">
+                <span class="icon"><i class="gg-profile"></i></span>
+                <span>À propos</span>
+            </a>
+            <p style="align-self:center;">|</p>
+            <a href="{{ path('contact') }}" class="navbar-item is-size-7	" style="flex-direction: column">
+                <span class="icon"><i class="gg-mail"></i></span>
+                <span>Contact</span>
+            </a>
+        </div>
+    </nav>
+    {% block body %}{% endblock %}
+
+    {% block javascripts %}
+        {{ encore_entry_script_tags('app') }}
+
+        <!-- Renders app.js & a webpack runtime.js file
+            <script src="/build/runtime.js"></script>
+            <script src="/build/app.js"></script> -->
+    {% endblock %}
+    </body>
+</html>

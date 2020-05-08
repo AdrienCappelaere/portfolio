@@ -1,0 +1,229 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Adrien Cappelaere - Stratégiste digital{% endblock %}
+
+{% block body %}
+
+<!-- HERO -->
+<section class="section a-hero has-padding-bottom-0 is-flex">
+    <div>
+        <h1 class="title is-size-2-mobile is-size-1-tablet has-text-primary">Adrien Cappelaere</h1>
+        <h2 class="title is-size-2-mobile is-size-1-tablet a-text-blue-8 has-margin-bottom-62">Stratégiste digital</h2>
+        <div class="is-flex">
+            <div class="scroller has-margin-right-24">
+            </div>
+            <a href="#competences" class="button is-primary has-text-white scroll button-hero">
+                <span>En savoir plus</span>
+                <span class="icon">
+                <i class="gg-arrow-down-o"></i>
+            </span>
+            </a>
+        </div>
+    </div>
+    <div class="is-hidden-mobile a-img-hero">
+        <img src="{{ asset('build/images/adrien-home.png') }}" alt="Illustration d'Adrien Cappelaere à l'ordinateur">
+    </div>
+</section>
+
+<!-- COMPETENCES -->
+<section  class="section has-padding-top-0">
+    <div class="is-flex a-competence-section">
+        <div class="a-competence a-competence-left a-competence-first has-padding-bottom-24">
+            <div id="competences" class="a-competence-main-img a-competence-main-img-right has-padding-bottom-16">
+                <img src="{{ asset('build/images/developpement-web.png') }}" alt="Illustration de la compétence développement web">
+            </div>
+            <div class="a-competence-txt">
+                <h3 class="title is-size-4-mobile is-size-3-tablet has-text-white">Développement web</h3>
+                <p class="has-text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada eget mauris risus, suspendisse non. Morbi ut eu ipsum sed tellus.</p>
+                <div class="has-margin-top-16">
+                    <div class="is-flex has-margin-top-32 has-margin-bottom-32">
+                        <div class="is-flex a-img-center" style="min-width: 48px; min-height: 48px;">
+                            <img src="{{ asset('build/images/cms.png') }}" alt="Illustration de la compétence développement web">
+                        </div>
+                        <div class="has-margin-left-24">
+                            <h4 class="title is-5 has-text-white has-margin-bottom-8 has-padding-right-8">CMS</h4>
+                            <div class="tags">
+                                <span class="tag has-text-primary has-text-weight-bold">Wordpress</span>
+                                <span class="tag has-text-primary has-text-weight-bold">Symfony</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="is-flex has-margin-top-32 has-margin-bottom-32">
+                        <div class="is-flex a-img-center" style="min-width: 48px; min-height: 48px;">
+                            <img src="{{ asset('build/images/frontend.png') }}" alt="Illustration de la compétence développement web">
+                        </div>
+                        <div class="has-margin-left-24">
+                            <h4 class="title is-5 has-text-white has-margin-bottom-8 has-padding-right-8">Technologies Front-end</h4>
+                            <div class="tags">
+                                <span class="tag has-text-primary has-text-weight-bold">React</span>
+                                <span class="tag has-text-primary has-text-weight-bold">JavaScript</span>
+                                <span class="tag has-text-primary has-text-weight-bold">CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="is-flex has-margin-top-32 has-margin-bottom-32">
+                        <div class="is-flex a-img-center" style="min-width: 48px; min-height: 48px;">
+                            <img src="{{ asset('build/images/backend.png') }}" alt="Illustration de la compétence développement web">
+                        </div>
+                        <div class="has-margin-left-24">
+                            <h4 class="title is-5 has-text-white has-margin-bottom-8 has-padding-right-8">Technologies Back-end</h4>
+                            <div class="tags">
+                                <span class="tag has-text-primary has-text-weight-bold">Wordpress</span>
+                                <span class="tag has-text-primary has-text-weight-bold">Symfony</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="a-competence a-competence-right has-padding-bottom-24">
+            <div class="a-competence-main-img is-flex has-padding-bottom-16">
+                <img src="{{ asset('build/images/marketing-digital.png') }}" alt="Illustration de la compétence marketing digital">
+            </div>
+            <div class="a-competence-txt">
+            <h3 class="title is-size-4-mobile is-size-3-tablet has-text-white">Marketing digital</h3>
+            <p class="has-text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada eget mauris risus, suspendisse non. Morbi ut eu ipsum sed tellus.</p>
+            <div class="has-margin-top-16">
+                <div class="is-flex has-margin-top-32 has-margin-bottom-32">
+                    <div class="is-flex a-img-center" style="min-width: 48px; min-height: 48px;">
+                        <img src="{{ asset('build/images/strategie-digitale.png') }}" alt="Illustration de la compétence stratégie digitale">
+                    </div>
+                    <div class="has-margin-left-24">
+                        <h4 class="title is-5 has-text-white has-margin-bottom-8 has-padding-right-8">Stratégie digitale</h4>
+                        <div class="tags">
+                            <span class="tag has-text-primary has-text-weight-bold">Audit & Étude</span>
+                            <span class="tag has-text-primary has-text-weight-bold">Objectifs & Vision</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="is-flex has-margin-top-32 has-margin-bottom-32">
+                    <div class="is-flex a-img-center" style="min-width: 48px; min-height: 48px;">
+                        <img src="{{ asset('build/images/seo.png') }}" alt="Illustration de la compétence référencement naturel">
+                    </div>
+                    <div class="has-margin-left-24">
+                        <h4 class="title is-5 has-text-white has-margin-bottom-8 has-padding-right-8">Référencement naturel</h4>
+                        <div class="tags">
+                            <span class="tag has-text-primary has-text-weight-bold">Technique</span>
+                            <span class="tag has-text-primary has-text-weight-bold">Onsite</span>
+                            <span class="tag has-text-primary has-text-weight-bold">Offsite</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="is-flex has-margin-top-32 has-margin-bottom-32">
+                    <div class="is-flex a-img-center" style="min-width: 48px; min-height: 48px;">
+                        <img src="{{ asset('build/images/sea.png') }}" alt="Illustration de la compétence référencement payant">
+                    </div>
+                    <div class="has-margin-left-24">
+                        <h4 class="title is-5 has-text-white has-margin-bottom-8 has-padding-right-8">Référencement payant</h4>
+                        <div class="tags">
+                            <span class="tag has-text-primary has-text-weight-bold">Google Ads</span>
+                            <span class="tag has-text-primary has-text-weight-bold">Facebook Ads</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="a-competence a-competence-left a-competence-last has-padding-bottom-24">
+            <div class="a-competence-main-img a-competence-main-img-right is-flex has-padding-bottom-16">
+                <img src="{{ asset('build/images/design.png') }}" alt="Illustration de la compétence design et UX">
+            </div>
+            <div class="a-competence-txt">
+            <h3 class="title is-size-4-mobile is-size-3-tablet has-text-white">Design & UX</h3>
+            <p class="has-text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada eget mauris risus, suspendisse non. Morbi ut eu ipsum sed tellus.</p>
+            <div class="has-margin-top-16">
+                <div class="is-flex has-margin-top-32 has-margin-bottom-32">
+                    <div class="is-flex a-img-center" style="min-width: 48px; min-height: 48px;">
+                        <img src="{{ asset('build/images/ux.png') }}" alt="Illustration de la compétence études et recherche UX">
+                    </div>
+                    <div class="has-margin-left-24">
+                        <h4 class="title is-5 has-text-white has-margin-bottom-8 has-padding-right-8">Étude & Recherche UX</h4>
+                        <div class="tags">
+                            <span class="tag has-text-primary has-text-weight-bold">Étude heuristique</span>
+                            <span class="tag has-text-primary has-text-weight-bold">Étude d'usabilité</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="is-flex has-margin-top-32 has-margin-bottom-32">
+                    <div class="is-flex a-img-center" style="min-width: 48px; min-height: 48px;">
+                        <img src="{{ asset('build/images/design-web.png') }}" alt="Illustration de la compétence design web">
+                    </div>
+                    <div class="has-margin-left-24">
+                        <h4 class="title is-5 has-text-white has-margin-bottom-8 has-padding-right-8">Design web</h4>
+                        <div class="tags">
+                            <span class="tag has-text-primary has-text-weight-bold">Wireframe</span>
+                            <span class="tag has-text-primary has-text-weight-bold">Maquette graphique</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="is-flex has-margin-top-32 has-margin-bottom-32">
+                    <div class="is-flex a-img-center" style="min-width: 48px; min-height: 48px;">
+                        <img src="{{ asset('build/images/design-system.png') }}" alt="Illustration de la compétence design system">
+                    </div>
+                    <div class="has-margin-left-24">
+                        <h4 class="title is-5 has-text-white has-margin-bottom-8 has-padding-right-8">Design system</h4>
+                        <div class="tags">
+                            <span class="tag has-text-primary has-text-weight-bold">Atomic Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROJETS -->
+<section class="section">
+    <h2 class="title is-1 a-text-blue-11">Mes projets</h2>
+    <div class="a-project-bloc">
+        <div class="a-project-bloc-txt">
+            <h3 class="title is-3 has-text-primary">Concordia de Geispitzen</h3>
+            <p class="title is-4 has-text-grey">Orchestre de village</p>
+            <div class="tags ">
+                <span class="tag is-primary has-text-white has-text-weight-bold">Wordpress</span>
+                <span class="tag is-primary has-text-white has-text-weight-bold">SASS</span>
+                <span class="tag is-primary has-text-white has-text-weight-bold">PHP</span>
+            </div>
+            <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada eget mauris risus, suspendisse non. Morbi ut eu ipsum sed tellus.</p>
+            <div class="buttons has-margin-bottom-24">
+                <a class="button btn-secondary">
+                <span class="icon">
+                    <i class="gg-code-slash"></i>
+                </span>
+                    <span>Voir le code</span>
+                </a>
+                <a class="button is-primary">
+                <span class="icon">
+                    <i class="gg-arrow-top-right-o"></i>
+                </span>
+                    <span>Voir le site</span>
+                </a>
+            </div>
+        </div>
+        <div class="is-flex a-img-center">
+            <img src="{{ asset('build/images/projet-geispitzen.png') }}" alt="Illustration du projet de site Wordpress du Concordia de Geispitzen">
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<footer class="footer">
+    <div class="section">
+        <div class="a-footer-txt">
+            <h2 class="title is-size-3-mobile is-size-1-tablet is-marginless has-text-white">Me contacter</h2>
+            <p class="title is-size-3-mobile is-size-1-tablet a-text-blue-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus nunc aliquet enim laoreet ornare. </p>
+            <a href="{{ path('contact') }}" class="button is-white has-text-primary has-text-weight-bold">
+                <span>Me contacter</span>
+                <span class="icon">
+                <i class="gg-arrow-right-o"></i>
+            </span>
+            </a>
+        </div>
+        <div class="is-hidden-mobile">
+            <img src="{{ asset('build/images/contact.png') }}" alt="Illustration du projet de site Wordpress du Concordia de Geispitzen">
+        </div>
+    </div>
+
+</footer>
+{% endblock %}
