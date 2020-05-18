@@ -16,11 +16,20 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="94b812a2-f4c8-454d-99bc-5757645356b1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sshConfigs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/about.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/about.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -155,6 +164,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
@@ -192,6 +202,18 @@
       <workItem from="1588840885961" duration="599000" />
       <workItem from="1588867289990" duration="17947000" />
       <workItem from="1588940212402" duration="9208000" />
+      <workItem from="1588969529006" duration="165000" />
+      <workItem from="1589011400889" duration="1000" />
+      <workItem from="1589013864855" duration="2797000" />
+      <workItem from="1589101758696" duration="823000" />
+      <workItem from="1589127383811" duration="4000" />
+      <workItem from="1589128774531" duration="5000" />
+      <workItem from="1589142822593" duration="906000" />
+      <workItem from="1589209772603" duration="791000" />
+      <workItem from="1589211502067" duration="616000" />
+      <workItem from="1589543510535" duration="1893000" />
+      <workItem from="1589748077303" duration="602000" />
+      <workItem from="1589806106899" duration="2177000" />
     </task>
     <servers />
   </component>
@@ -203,11 +225,24 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1187" y="129" key="#Deployment" timestamp="1588581560132">
@@ -242,10 +277,14 @@
       <screen x="-1920" y="4" width="1920" height="1040" />
     </state>
     <state x="-1795" y="38" width="1736" height="856" key="DirDiffDialog/-1920.4.1920.1040/0.0.1920.1040@-1920.4.1920.1040" timestamp="1588583293743" />
-    <state x="-1459" y="169" key="SettingsEditor" timestamp="1588942154552">
+    <state x="-1180" y="279" key="FileChooserDialogImpl" timestamp="1588969691504">
       <screen x="-1920" y="4" width="1920" height="1040" />
     </state>
-    <state x="-1459" y="169" key="SettingsEditor/-1920.4.1920.1040/0.0.1920.1040@-1920.4.1920.1040" timestamp="1588942154552" />
+    <state x="-1180" y="279" key="FileChooserDialogImpl/-1920.4.1920.1040/0.0.1920.1040@-1920.4.1920.1040" timestamp="1588969691504" />
+    <state x="-1459" y="169" key="SettingsEditor" timestamp="1589143128602">
+      <screen x="-1920" y="4" width="1920" height="1040" />
+    </state>
+    <state x="-1459" y="169" key="SettingsEditor/-1920.4.1920.1040/0.0.1920.1040@-1920.4.1920.1040" timestamp="1589143128602" />
     <state x="-894" y="121" width="432" height="699" key="ftp.server.browser" timestamp="1588581557845">
       <screen x="-1920" y="4" width="1920" height="1040" />
     </state>

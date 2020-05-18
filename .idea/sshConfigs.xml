@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="SshConfigs">
-    <configs>
-      <sshConfig authType="PASSWORD" host="acappelaere.com" id="78041672-ceaa-4846-9f4c-25377adea7a0" port="22" nameFormat="DESCRIPTIVE" username="caad8537" />
-    </configs>
-  </component>
-</project>
