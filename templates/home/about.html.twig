@@ -107,16 +107,30 @@
 
     <!-- CONTACT -->
     <footer class="footer">
+        <script>
+            function notificationFooter() {
+                let box = document.getElementById("notificationFooter");
+                box.classList.remove("is-hidden");
+                function closeHelpDiv(){
+                    document.getElementById("notificationFooter").classList.add("is-hidden");
+                }
+                // close the div in 5 secs
+                window.setTimeout( closeHelpDiv, 4000 );
+            }
+        </script>
         <div class="section">
             <div class="a-footer-txt">
                 <h2 class="title is-size-3-mobile is-size-1-tablet is-marginless has-text-white">Me contacter</h2>
                 <p class="title is-size-3-mobile is-size-1-tablet a-text-blue-3">Je serais ravi d’échanger avec vous autour d’un bon thé. Envoyez moi un email et arrangeons nos disponibilités !</p>
-                <a href="{{ path('contact') }}" class="button is-white has-text-primary has-text-weight-bold">
+                <a data-clipboard-text="adrien.cappelaere@gmail.com" class="button is-white has-text-primary has-text-weight-bold copy" onclick="notificationFooter()">
                     <span>Me contacter</span>
                     <span class="icon">
-                <i class="gg-arrow-right-o"></i>
-            </span>
+                <i class="gg-mail"></i>
+                    </span>
                 </a>
+                <div id="notificationFooter" class="is-hidden has-text-white content has-margin-top-16">
+                    Vous avez copié mon email ! 💬
+                </div>
             </div>
             <div class="is-hidden-mobile is-flex a-contact-img">
                 <img src="{{ asset('build/images/contact.png') }}" alt="Illustration du bloc de contact">

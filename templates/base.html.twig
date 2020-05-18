@@ -8,20 +8,53 @@
         <meta name="robots" content="noindex">
         <meta name="description" content="{% block metadescription %}{% endblock %}" />
         <meta name="title" content="{% block metatitle %}{% endblock %}">
-
         <!-- Open Graph / Facebook -->
         <meta property="og:type" content="website">
         <meta property="og:url" content="{{ app.request.uri }}">
         <meta property="og:title" content="Adrien Cappelaere - Stratégiste digital">
         <meta property="og:description" content="Laissez-vous guider pour accroître votre présence digitale ! Professionnel du web, je développe des sites optimisés pour atteindre vos objectifs et utilisateurs.">
         <meta property="og:image" content="{{ asset('build/images/opengraph.jpg') }}">
-
         <!-- Twitter -->
         <meta property="twitter:card" content="summary_large_image">
         <meta property="twitter:url" content="{{ app.request.uri }}">
         <meta property="twitter:title" content="Adrien Cappelaere - Stratégiste digital">
         <meta property="twitter:description" content="Laissez-vous guider pour accroître votre présence digitale ! Professionnel du web, je développe des sites optimisés pour atteindre vos objectifs et utilisateurs.">
         <meta property="twitter:image" content="{{ asset('build/images/opengraph.jpg') }}">
+        <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+        <script>
+            function notificationDesktop() {
+                let box = document.getElementById("notificationDesktop");
+                box.classList.remove("is-hidden");
+                function closeHelpDiv(){
+                    document.getElementById("notificationDesktop").classList.add("is-hidden");
+                }
+                // close the div in 5 secs
+                window.setTimeout( closeHelpDiv, 4000 );
+            }
+            function removeNotificationDesktop() {
+                let box = document.getElementById("notificationDesktop");
+                box.classList.add("is-hidden");
+            }
+            function notificationMobile() {
+                let box = document.getElementById("notificationMobile");
+                box.classList.remove("is-hidden");
+                function closeHelpDiv(){
+                    document.getElementById("notificationMobile").classList.add("is-hidden");
+                }
+                // close the div in 5 secs
+                window.setTimeout( closeHelpDiv, 4000 );
+            }
+            function removeNotificationMobile() {
+                let box = document.getElementById("notificationMobile");
+                box.classList.add("is-hidden");
+            }
+            function closeHelpDiv(){
+                document.getElementById("notificationMobile").classList.add("is-hidden");
+                document.getElementById("notificationDesktop").classList.add("is-hidden");
+            }
+            // close the div in 5 secs
+            window.setTimeout( closeHelpDiv, 4000 );
+        </script>
 
         {% block stylesheets %}
             {# 'app' must match the first argument to addEntry() in webpack.config.js #}
@@ -50,7 +83,7 @@
         </div>
         <div id="" class="navbar-menu is-hidden-mobile ">
             <div class="navbar-end navbar-desktop">
-                <a href="{{ path('home') }}" class="navbar-item has-text-primary is-size-7" style="flex-direction: column">
+                <a href="{{ path('home') }}" class="navbar-item is-size-7" style="flex-direction: column">
                     <span class="icon"><i class="gg-home"></i></span>
                     <span>Accueil</span>
                 </a>
@@ -60,16 +93,22 @@
                     <span>À propos</span>
                 </a>
                 <p style="align-self:center;">|</p>
-                <a href="{{ path('contact') }}" class="navbar-item is-size-7	" style="flex-direction: column">
+                <a class="navbar-item is-size-7 copy" style="flex-direction: column" data-clipboard-text="adrien.cappelaere@gmail.com" onclick="notificationDesktop()">
                     <span class="icon"><i class="gg-mail"></i></span>
                     <span>Contact</span>
                 </a>
+                <div style="position:relative">
+                    <div id="notificationDesktop" class="notification notification-desktop is-hidden">
+                        <button class="delete" onclick="removeNotificationDesktop()"></button>
+                        Vous avez copié mon email ! 💬
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
     <nav class="navbar is-fixed-bottom is-hidden-desktop is-centered " role="navigation" aria-label="main navigation">
         <div class="navbar-brand is-flex navbar-bottom ">
-            <a href="{{ path('home') }}" class="navbar-item has-text-primary is-size-7" style="flex-direction: column">
+            <a href="{{ path('home') }}" class="navbar-item is-size-7" style="flex-direction: column">
                 <span class="icon"><i class="gg-home"></i></span>
                 <span>Accueil</span>
             </a>
@@ -79,10 +118,16 @@
                 <span>À propos</span>
             </a>
             <p style="align-self:center;">|</p>
-            <a href="{{ path('contact') }}" class="navbar-item is-size-7	" style="flex-direction: column">
+            <a class="navbar-item is-size-7 copy" style="flex-direction: column" data-clipboard-text="adrien.cappelaere@gmail.com" onclick="notificationMobile()">
                 <span class="icon"><i class="gg-mail"></i></span>
                 <span>Contact</span>
             </a>
+            <div style="position:relative">
+                <div id="notificationMobile" class="notification notification-mobile is-hidden">
+                    <button class="delete" onclick="removeNotificationMobile()"></button>
+                    Vous avez copié mon email ! 💬
+                </div>
+            </div>
         </div>
     </nav>
     {% block body %}{% endblock %}
@@ -91,14 +136,7 @@
         {{ encore_entry_script_tags('app') }}
         <!-- Hotjar Tracking Code for http://dev.acappelaere.com/ -->
         <script>
-            (function(h,o,t,j,a,r){
-                h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-                h._hjSettings={hjid:1803140,hjsv:6};
-                a=o.getElementsByTagName('head')[0];
-                r=o.createElement('script');r.async=1;
-                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-                a.appendChild(r);
-            })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+
         </script>
         <!-- Renders app.js & a webpack runtime.js file
             <script src="/build/runtime.js"></script>

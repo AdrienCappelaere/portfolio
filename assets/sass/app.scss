@@ -184,6 +184,19 @@ $family-secondary: "Poppins", BlinkMacSystemFont, -apple-system, "Segoe UI", "Ro
   align-items: center;
 }
 
+.notification-desktop  {
+  position:absolute;
+  top:50px;
+  right: 0;
+  white-space: nowrap;
+}
+
+.notification-mobile  {
+  position:absolute;
+  top: -70px;
+  right: 0;
+  white-space: nowrap;
+}
 
 
 
