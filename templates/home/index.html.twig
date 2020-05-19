@@ -168,16 +168,32 @@
 <!-- PROJETS -->
 <section class="section">
     <h2 class="title is-1 a-text-blue-11">Mes projets</h2>
+    <p class="content">Sauf indication contraire, j'ai géré l'intégralité des étapes des projets que j'affiche. De l'idée initiale jusqu'à sa mise en ligne, en passant par la réflexion UX, le design, le développement technique et l'optimisation.</p>
     <div class="a-project-bloc">
         <div class="a-project-bloc-txt">
             <h3 class="title is-3 has-text-primary">Concordia de Geispitzen</h3>
             <p class="title is-4 has-text-grey">Orchestre de village</p>
-            <div class="tags ">
-                <span class="tag is-primary has-text-white has-text-weight-bold">Wordpress</span>
-                <span class="tag is-primary has-text-white has-text-weight-bold">SASS</span>
-                <span class="tag is-primary has-text-white has-text-weight-bold">PHP</span>
+            <div class="field is-grouped is-grouped-multiline">
+                <div class="control">
+                    <div class="tags has-addons">
+                        <span class="tag is-dark">CMS</span>
+                        <span class="tag is-primary">Wordpress</span>
+                    </div>
+                </div>
+                <div class="control">
+                    <div class="tags has-addons">
+                        <span class="tag is-dark">Style</span>
+                        <span class="tag is-primary">Sass</span>
+                    </div>
+                </div>
+                <div class="control">
+                    <div class="tags has-addons">
+                        <span class="tag is-dark">Database</span>
+                        <span class="tag is-primary">MySQL</span>
+                    </div>
+                </div>
             </div>
-            <p class="content">J’ai réalisé ce site Wordpress pour une association centenaire à l’aide d’un thème starter et ACF Pro.</p>
+            <p class="content">Site destiné à un orchestre centenaire dans le Sundgau (Alsace, France).</p>
             <span class="tag is-warning has-margin-bottom-8">
               En cours de finalisation
             </span>
@@ -198,6 +214,91 @@
         </div>
         <div class="is-flex a-img-center">
             <img src="{{ asset('build/images/projet-geispitzen.png') }}" alt="Illustration du projet de site Wordpress du Concordia de Geispitzen">
+        </div>
+    </div>
+    <div class="a-project-bloc">
+        <div class="a-project-bloc-txt">
+            <h3 class="title is-3 has-text-primary">WiteMoney</h3>
+            <p class="title is-4 has-text-grey">Application web de gestion de budget</p>
+            <div class="field is-grouped is-grouped-multiline">
+                <div class="control">
+                    <div class="tags has-addons">
+                        <span class="tag is-dark">CMS</span>
+                        <span class="tag is-primary">Symfony</span>
+                    </div>
+                </div>
+                <div class="control">
+                    <div class="tags has-addons">
+                        <span class="tag is-dark">Style</span>
+                        <span class="tag is-primary">Bulma + Sass</span>
+                    </div>
+                </div>
+                <div class="control">
+                    <div class="tags has-addons">
+                        <span class="tag is-dark">Database</span>
+                        <span class="tag is-primary">MySQL</span>
+                    </div>
+                </div>
+            </div>
+            <p class="content">Cette application permet de gérer simplement ses dépenses quotidiennes et son budget.</p>
+            <span class="tag is-warning has-margin-bottom-8">
+              En cours de finalisation
+            </span>
+            <div class="buttons has-margin-bottom-24">
+                <a class="button btn-secondary" disabled>
+                <span class="icon">
+                    <i class="gg-code-slash"></i>
+                </span>
+                    <span>Voir le code</span>
+                </a>
+                <a class="button is-primary" disabled>
+                <span class="icon">
+                    <i class="gg-arrow-top-right-o"></i>
+                </span>
+                    <span>Voir le site</span>
+                </a>
+            </div>
+        </div>
+        <div class="is-flex a-img-center">
+            <img src="{{ asset('build/images/wite-mockup.png') }}" alt="Illustration du projet de site WiteMoney">
+        </div>
+    </div>
+    <div class="a-project-bloc">
+        <div class="a-project-bloc-txt">
+            <h3 class="title is-3 has-text-primary">Portfolio</h3>
+            <p class="title is-4 has-text-grey">Ce que vous êtes entrain de parcourir !</p>
+            <div class="field is-grouped is-grouped-multiline">
+                <div class="control">
+                    <div class="tags has-addons">
+                        <span class="tag is-dark">CMS</span>
+                        <span class="tag is-primary">Symfony</span>
+                    </div>
+                </div>
+                <div class="control">
+                    <div class="tags has-addons">
+                        <span class="tag is-dark">Style</span>
+                        <span class="tag is-primary">Bulma + Sass</span>
+                    </div>
+                </div>
+                <div class="control">
+                    <div class="tags has-addons">
+                        <span class="tag is-dark">Version</span>
+                        <span class="tag is-primary">0.9</span>
+                    </div>
+                </div>
+            </div>
+            <p class="content">Cette réalisation a pour objectif de vous présenter mes compétences et mes différents travaux. Le site est en constante évolution pour refléter ma progression.</p>
+            <div class="buttons has-margin-bottom-24">
+                <a href="https://github.com/AdrienCappelaere/portfolio" class="button btn-secondary" target="_blank">
+                <span class="icon">
+                    <i class="gg-code-slash"></i>
+                </span>
+                    <span>Voir le code</span>
+                </a>
+            </div>
+        </div>
+        <div class="is-flex a-img-center">
+            <img src="{{ asset('build/images/portfolio-mockup.png') }}" alt="Illustration du projet de site WiteMoney">
         </div>
     </div>
 </section>

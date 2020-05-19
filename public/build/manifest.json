@@ -28,5 +28,7 @@
   "build//images/valeur-business.png": "/build//images/valeur-business.png",
   "build//images/valeur-chiffre.png": "/build//images/valeur-chiffre.png",
   "build//images/valeur-client.png": "/build//images/valeur-client.png",
-  "build//images/valeur-ux.png": "/build//images/valeur-ux.png"
+  "build//images/valeur-ux.png": "/build//images/valeur-ux.png",
+  "build//images/wite-mockup.png": "/build//images/wite-mockup.png",
+  "build//images/portfolio-mockup.png": "/build//images/portfolio-mockup.png"
 }

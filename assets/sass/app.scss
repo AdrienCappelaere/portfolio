@@ -178,6 +178,15 @@ $family-secondary: "Poppins", BlinkMacSystemFont, -apple-system, "Segoe UI", "Ro
   }
 }
 
+.a-project-bloc {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  img {
+    width: 100%;
+    max-width: 540px;
+  }
+}
+
 
 .a-contact-img {
   justify-content: center;
