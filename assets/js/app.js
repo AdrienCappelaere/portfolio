@@ -27,7 +27,6 @@ import './notification';
 })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 
 var btn = document.getElementsByClassName('copy');
-console.log(btn);
 var clipboard = new ClipboardJS(btn);
 
 clipboard.on('success', function(e) {
@@ -37,6 +36,3 @@ clipboard.on('success', function(e) {
 clipboard.on('error', function(e) {
     console.log(e);
 });
-
-
-console.log('Hello Webpack Encore! Edit me in assets/js/app.js');
